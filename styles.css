@@ -1,10 +1,10 @@
 body {
     width: 100%;
-    height: auto;
-}
-#cover {
-    margin: auto;
-    display: block;
     height: 100%;
-    width: auto;
+    background-image: url("images/CUI-pass.png");
+    background-size: cover;
+}
+p {
+    text-align: center;
+    margin: auto;
 }
