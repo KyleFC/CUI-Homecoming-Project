@@ -1,0 +1,9 @@
+body {
+    height: auto;
+}
+#cover {
+    margin: auto;
+    display: block;
+    height: 100%;
+    width: auto;
+}
