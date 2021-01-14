@@ -3,22 +3,27 @@ body {
     height: 100%;
 }
 #img-container {
-    z-index: 10;
+
+}
+.text {
+    text-align: center;
+    font-size: 60px;
+    font-family: Verdana;
 }
 #passport {
     height: 100%;
     width: auto;
-    z-index: 11;
+
 }
 #passButton, a:link {
-    font-size: 60px;
-    font-family: Verdana;
+    color: gold;
     width: 200px;
     background-color: green;
+    opacity: .8;
     position: absolute;
-    z-index: 1;
-    text-align: center;
     margin: auto;
     border-radius: 10px;
     text-decoration: none;
+    left: 250px;
+    top: 455px;
 }
