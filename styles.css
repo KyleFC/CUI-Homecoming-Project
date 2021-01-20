@@ -1,11 +1,10 @@
-body {
+body, html {
+    margin: 0;
+    padding: 0;
     height: 100%;
-    width: auto;
 }
 #tourVid {
     position: fixed;
-    right: 0;
-    left: 0;
     bottom: 10px;
     min-width: 150%;
     min-height: 150%;
@@ -20,27 +19,54 @@ body {
     font-size: 60px;
     font-family: Verdana;
 }
-#passport {
+#pass {
+    position: relative;
     height: 100%;
-    top: 0;
-    bottom: 0;
     width: auto;
+    margin: 0 auto;
+    display: block;
+    bottom: 0;
+    z-index: 10;
 }
-#img-container {
+#passport {
+    position: absolute;
+    left: 0;
+    right: 0;
     max-height: 100%;
-    position: absolute;
-    z-index: 20;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    bottom: 0;
+    z-index: 10;
 }
-#passButton, a:link {
-    color: gold;
-    width: 200px;
-    background-color: green;
+#passButton, a:link,a:visited {
+    color: white;
+    display: block;
+    text-align: center;
     opacity: .8;
-    position: absolute;
-    margin: auto;
+    position: relative;
     border-radius: 10px;
     text-decoration: none;
-    left: 250px;
-    top: 455px;
+    z-index: 15;
+}
+#stImageContainer {
+    position: relative;
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    bottom: 0;
+    z-index: 10;
+}
+#stmpImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    bottom: 0;
     z-index: 10;
 }
