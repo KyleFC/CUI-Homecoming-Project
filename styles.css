@@ -1,6 +1,19 @@
 body {
-    width: auto;
     height: 100%;
+    width: auto;
+}
+#tourVid {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 10px;
+    min-width: 150%;
+    min-height: 150%;
+    opacity: .4;
+}
+#background {
+    z-index: 0;
+    pointer-events: none;
 }
 .text {
     text-align: center;
@@ -9,7 +22,14 @@ body {
 }
 #passport {
     height: 100%;
+    top: 0;
+    bottom: 0;
     width: auto;
+}
+#img-container {
+    max-height: 100%;
+    position: absolute;
+    z-index: 20;
 }
 #passButton, a:link {
     color: gold;
@@ -22,4 +42,5 @@ body {
     text-decoration: none;
     left: 250px;
     top: 455px;
+    z-index: 10;
 }
