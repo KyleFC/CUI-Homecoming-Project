@@ -41,6 +41,7 @@ body, html {
     z-index: 10;
 }
 #passButton, a:link,a:visited {
+    top: 20px;
     color: white;
     display: block;
     text-align: center;
@@ -71,3 +72,11 @@ body, html {
     bottom: 0;
     z-index: 10;
 }
+.box {
+    position: relative;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
