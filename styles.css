@@ -52,34 +52,31 @@ body, html {
     z-index: 15;
 }
 #stImageContainer {
-    position: relative;
     height: 100%;
-    width: auto;
-    margin: 0 auto;
-    display: block;
-    bottom: 0;
-    z-index: 10;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, [col] auto ) ;
+    grid-template-rows: repeat(2, [row] auto  );
+    background-color: #fff;
+    color: #444;
     background-image: url("images/StampPage.png");
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
 }
-#stmpImage {
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: auto;
-    max-height: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
-    top: 0;
-    z-index: 10;
-}
+
 .box {
-    position: relative;
+    margin: 50px;
     background-color: #444;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
+  }
+  #placeholder1 {
+      grid-column: col /span 2;
+      grid-row: row 1;
+  }
+  #placeholder2 {
+      grid-column: col / span 1;
+      grid-row: row 2;
   }
