@@ -1,1 +1,1 @@
-var button = document.getElementsByName("passButton");
+var button = document.getElementById("passButton");
