@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow: hidden;
 }
 h1 {
     text-align: center;
@@ -110,6 +111,28 @@ h1 {
       text-align: center;
       width: 100%;
       height: 100%;
+}
+
+
+#Germany {
+    font-family: Gothic;
+    background-color: white;
+    margin-top: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid grey;
+}
+#gpage {
+    overflow-y: scroll;
+    grid-template-columns: repeat(4, [col] auto ) ;
+    grid-template-rows: repeat(2, [row] auto  );
+}
+#gPerformance {
+    position: relative;
+    padding: 0;
+    margin-right: 100px;
+    margin-left: 100px; 
+    grid-column: col 3 / span 2;
+    grid-row: row 1;
 }
 @media screen and (max-width: 899px)
 {
