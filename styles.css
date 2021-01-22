@@ -3,6 +3,13 @@ body, html {
     padding: 0;
     height: 100%;
 }
+h1 {
+    text-align: center;
+    font-family: Georgia;
+    padding: 0;
+    margin: 0;
+    background-color: goldenrod;
+}
 #tourVid {
     left: -250px;
     position: fixed;
@@ -109,6 +116,9 @@ body, html {
     #stImageContainer {
         background-image: url("images/stampPage1.png");
     }
+    #testvid {
+        min-height: 200px;
+    }
     .wrapper{
         grid-template-columns: repeat(2, [col] auto ) ;
         grid-template-rows: repeat(3, [row] auto  );
@@ -124,21 +134,25 @@ body, html {
     }
     #placeholder3 {
         margin: 10px;
+        margin-left: 20px;
         grid-column: col;
         grid-row: row 2;
     }
     #placeholder4 {
         margin: 10px;
+        margin-right: 20px;
         grid-column: col 2;
         grid-row: row 2;
     }
     #placeholder5 {
         margin: 10px;
+        margin-left: 20px;
         grid-column: col;
         grid-row: row 3;
     }
     #placeholder6 {
         margin: 10px;
+        margin-right: 20px;
         grid-column: col 2;
         grid-row: row 3;
     }
