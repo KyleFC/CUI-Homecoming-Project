@@ -73,6 +73,8 @@ body, html {
     font-size: 150%;
   }
   #placeholder1 {
+      position: relative;
+      padding: 0;
       margin-right: 100px;
       margin-left: 100px;
       grid-column: col / span 2;
@@ -91,4 +93,11 @@ body, html {
   #placeholder5 {
       margin-left:50px;
       margin-right: 0px;
+  }
+  #per1{
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+      height: 100%;
   }
