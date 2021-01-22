@@ -52,6 +52,11 @@ body, html {
     z-index: 15;
 }
 #stImageContainer {
+    background-image: url("images/StampPage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wrapper {
     height: 100%;
     display: grid;
     grid-gap: 10px;
@@ -59,11 +64,7 @@ body, html {
     grid-template-rows: repeat(2, [row] auto  );
     background-color: #fff;
     color: #444;
-    background-image: url("images/StampPage.png");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-
 .box {
     margin: 50px;
     background-color: #444;
@@ -71,33 +72,74 @@ body, html {
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
-  }
-  #placeholder1 {
+}
+#placeholder1 {
       position: relative;
       padding: 0;
       margin-right: 100px;
       margin-left: 100px;
       grid-column: col / span 2;
       grid-row: row 1;
-  }
-  #placeholder2 {
+}
+#placeholder2 {
       margin-right: 100px;
       margin-left: 100px;
+      padding: 0;
       grid-column: col / span 2;
       grid-row: row 2;
-  }
-  #placeholder3 {
+      opacity: 0;
+}
+#placeholder3 {
       margin-left: 50px;
       margin-right: 0px;
-  }
-  #placeholder5 {
+}
+#placeholder5 {
       margin-left:50px;
       margin-right: 0px;
-  }
-  #per1{
+}
+.adapt{
       position: absolute;
       bottom: 0;
       text-align: center;
       width: 100%;
       height: 100%;
-  }
+}
+@media screen and (max-width: 899px)
+{
+    #stImageContainer {
+        background-image: url("images/stampPage1.png");
+    }
+    .wrapper{
+        grid-template-columns: repeat(2, [col] auto ) ;
+        grid-template-rows: repeat(3, [row] auto  );
+    }
+    #placeholder1 {
+        margin : 20px;
+    }
+    #placeholder2 {
+        margin: 10px;
+        z-index: -5;
+        grid-column: col / span 2;
+        grid-row: row 1;
+    }
+    #placeholder3 {
+        margin: 10px;
+        grid-column: col;
+        grid-row: row 2;
+    }
+    #placeholder4 {
+        margin: 10px;
+        grid-column: col 2;
+        grid-row: row 2;
+    }
+    #placeholder5 {
+        margin: 10px;
+        grid-column: col;
+        grid-row: row 3;
+    }
+    #placeholder6 {
+        margin: 10px;
+        grid-column: col 2;
+        grid-row: row 3;
+    }
+}
