@@ -148,6 +148,7 @@ h1 {
     padding: 0;
     grid-column: 2;
     grid-row: 1;
+    min-width: 450px;
 }
 .mapbox {
     position: relative;
@@ -157,6 +158,7 @@ h1 {
     background-position: center;
     grid-column: 1;
     grid-row: 1;
+    min-width: 450px;
 }
 .mapdesc {
     bottom: -4em;
@@ -167,6 +169,7 @@ h1 {
     grid-column: 1;
     grid-row: 2;
     margin-bottom: 70px;
+    min-width: 450px;
 }
 .linedesc {
     bottom: -3em;
@@ -176,9 +179,29 @@ h1 {
     grid-column: 2;
     grid-row: 2;
     margin-bottom: 70px;
+    min-width: 450px;
 }
 #gmap {
     background-image: url("images/Germany.jpg");
+}
+.nextButton {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2em;
+    border: 3px solid slategrey;
+    color: black;
+    transition: background-color .3s;
+    transition: border .2s;
+    position: absolute;
+    width: 3em;
+    height: 2em;
+    bottom: -2.5em;
+    right: 1em;
+}
+.nextButton:hover {
+    background-color: gainsboro;
+    border: 0;
 }
 @media screen and (max-width: 800px)
 {
