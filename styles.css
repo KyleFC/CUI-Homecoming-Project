@@ -2,7 +2,6 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
 }
 h1 {
     text-align: center;
@@ -67,7 +66,7 @@ h1 {
 .wrapper {
     height: 100%;
     display: grid;
-    grid-gap: 10px;
+    gap: 10px;
     grid-template-columns: repeat(4, [col] auto ) ;
     grid-template-rows: repeat(2, [row] auto  );
     background-color: #fff;
@@ -82,6 +81,7 @@ h1 {
     font-size: 150%;
 }
 #placeholder1 {
+      margin-top: 60px;
       position: relative;
       padding: 0;
       margin-right: 100px;
@@ -113,7 +113,22 @@ h1 {
       height: 100%;
 }
 
-
+/*CSS for Country/Performance pages*/
+.desc {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -5em;
+}
 #Germany {
     font-family: Gothic;
     background-color: white;
@@ -121,26 +136,36 @@ h1 {
     padding-bottom: 8px;
     border-bottom: 1px solid grey;
 }
-#gpage {
+#gPage {
     overflow-y: scroll;
-    grid-template-columns: repeat(4, [col] auto ) ;
-    grid-template-rows: repeat(2, [row] auto  );
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: repeat(3, 1fr  );
+    gap: 0px;
+    height: calc(100% + 50%);
 }
 #gPerformance {
     position: relative;
     padding: 0;
-    margin-right: 100px;
-    margin-left: 100px; 
-    grid-column: col 3 / span 2;
-    grid-row: row 1;
+    grid-column: 2;
+    grid-row: 1;
 }
-@media screen and (max-width: 899px)
+#gMap {
+    position: relative;
+    padding: 0;
+    background-image: url("images/Germany.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+#gmapDesc {
+    bottom: -4em;
+}
+@media screen and (max-width: 800px)
 {
     #stImageContainer {
         background-image: url("images/stampPage1.png");
-    }
-    #testvid {
-        min-height: 200px;
     }
     .wrapper{
         grid-template-columns: repeat(2, [col] auto ) ;
