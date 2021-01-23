@@ -1,4 +1,4 @@
-document.getElementById("gMap").addEventListener("click", function() {
+document.getElementById("gmap").addEventListener("click", function() {
     if ((navigator.platform.indexOf("iPhone") != -1) || 
        (navigator.platform.indexOf("iPad") != -1) || 
        (navigator.platform.indexOf("iPod") != -1))
@@ -6,3 +6,6 @@ document.getElementById("gMap").addEventListener("click", function() {
     else
     window.open("https://www.google.com/maps/place/Germany");
 });
+document.getElementById("gbutton").addEventListener("click", function() {
+    window.open("Austria.html");
+})
