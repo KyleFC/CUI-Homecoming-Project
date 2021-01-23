@@ -129,38 +129,56 @@ h1 {
     position: absolute;
     bottom: -5em;
 }
-#Germany {
+.countryHeader {
     font-family: Gothic;
     background-color: white;
     margin-top: 15px;
     padding-bottom: 8px;
     border-bottom: 1px solid grey;
 }
-#gPage {
+.lilnasx { /*aka country wrapper*/
     overflow-y: scroll;
     grid-template-columns: repeat(2, 1fr) ;
-    grid-template-rows: repeat(3, 1fr  );
+    grid-template-rows: repeat(2, 1fr  );
     gap: 0px;
-    height: calc(100% + 50%);
+    height: calc(100% + 20%);
 }
-#gPerformance {
+.countryPer {
     position: relative;
     padding: 0;
     grid-column: 2;
     grid-row: 1;
 }
-#gMap {
+.mapbox {
     position: relative;
     padding: 0;
-    background-image: url("images/Germany.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     grid-column: 1;
     grid-row: 1;
 }
-#gmapDesc {
+.mapdesc {
     bottom: -4em;
+}
+.composer {
+    position: relative;
+    padding: 0;
+    grid-column: 1;
+    grid-row: 2;
+    margin-bottom: 70px;
+}
+.linedesc {
+    bottom: -3em;
+}
+.trivia {
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
+    margin-bottom: 70px;
+}
+#gmap {
+    background-image: url("images/Germany.jpg");
 }
 @media screen and (max-width: 800px)
 {
