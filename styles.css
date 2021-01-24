@@ -88,6 +88,7 @@ h1 {
       margin-left: 100px;
       grid-column: col / span 2;
       grid-row: row 1;
+      min-width: 350px;
 }
 #placeholder2 {
       margin-right: 100px;
@@ -100,10 +101,34 @@ h1 {
 #placeholder3 {
       margin-left: 50px;
       margin-right: 0px;
+      background-image: url("images/germanyStamp.png");
+      background-size: contain;
+      background-color: rgba(255,255,255, 0);
+      background-repeat: no-repeat;
+      min-width: 100px;
+}
+#placeholder4 {
+    background-image: url("images/austriaStamp.png");
+    background-size: contain;
+    background-color: rgba(255,255,255, 0);
+    background-repeat: no-repeat;
+    min-width: 100px;
 }
 #placeholder5 {
       margin-left:50px;
       margin-right: 0px;
+      background-image: url("images/italyStamp.png");
+      background-size: contain;
+      background-color: rgba(255,255,255, 0);
+      background-repeat: no-repeat;
+      min-width: 100px;
+}
+#placeholder6 {
+    background-image: url("images/polandStamp.png");
+    background-size: contain;
+    background-color: rgba(255,255,255, 0);
+    background-repeat: no-repeat;
+    min-width: 100px;
 }
 .adapt{
       position: absolute;
