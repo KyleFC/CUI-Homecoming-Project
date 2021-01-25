@@ -62,6 +62,7 @@ h1 {
     background-image: url("images/StampPage.png");
     background-size: cover;
     background-repeat: no-repeat;
+    min-width: 970px;
 }
 .wrapper {
     height: 100%;
@@ -241,6 +242,7 @@ h1 {
 {
     #stImageContainer {
         background-image: url("images/stampPage1.png");
+        min-width: 200px;
     }
     .wrapper{
         grid-template-columns: repeat(2, [col] auto ) ;
@@ -248,6 +250,7 @@ h1 {
     }
     #placeholder1 {
         margin : 20px;
+        margin-right: 50px;
     }
     #placeholder2 {
         margin: 10px;
