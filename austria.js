@@ -7,5 +7,5 @@ document.getElementById("amap").addEventListener("click", function() {
     window.open("https://www.google.com/maps/place/Austria");
 });
 document.getElementById("abutton").addEventListener("click", function() {
-    window.open("Italy.html");
+    window.location = "Italy.html";
 })
