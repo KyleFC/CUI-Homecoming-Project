@@ -7,5 +7,5 @@ document.getElementById("imap").addEventListener("click", function() {
     window.open("https://www.google.com/maps/place/Italy");
 });
 document.getElementById("ibutton").addEventListener("click", function() {
-    window.open("Poland.html");
+    window.location = "Poland.html";
 })
