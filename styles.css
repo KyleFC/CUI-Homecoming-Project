@@ -206,9 +206,6 @@ h1 {
     margin-bottom: 70px;
     min-width: 450px;
 }
-#gmap {
-    background-image: url("images/Germany.jpg");
-}
 .nextButton {
     cursor: pointer;
     text-align: center;
@@ -227,6 +224,18 @@ h1 {
 .nextButton:hover {
     background-color: gainsboro;
     border: 0;
+}
+#gmap {
+    background-image: url("images/Germany.jpg");
+}
+#amap {
+    background-image: url("images/Austria.jpg");
+}
+#imap {
+    background-image: url("images/Italy.jpg");
+}
+#pmap {
+    background-image: url("images/Poland.jpg");
 }
 @media screen and (max-width: 800px)
 {
