@@ -7,5 +7,5 @@ document.getElementById("gmap").addEventListener("click", function() {
     window.open("https://www.google.com/maps/place/Germany");
 });
 document.getElementById("gbutton").addEventListener("click", function() {
-    window.open("Austria.html");
+    window.location = "Austria.html";
 })
