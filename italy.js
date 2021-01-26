@@ -6,6 +6,9 @@ document.getElementById("imap").addEventListener("click", function() {
     else
     window.open("https://www.google.com/maps/place/Italy");
 });
-document.getElementById("ibutton").addEventListener("click", function() {
+document.getElementById("inext").addEventListener("click", function() {
     window.location = "Poland.html";
+})
+document.getElementById("iback").addEventListener("click", function() {
+    window.location = "Austria.html";
 })
