@@ -2,15 +2,17 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: "mr-eaves-xl-sans",sans-serif;
+    color: #444;
 }
 h1 {
     text-align: center;
-    font-family: Courier;
     padding: 0;
     margin: 0;
     background-color: goldenrod;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    font-family: "mrs-eaves-xl-serif", serif;
 }
 #tourVid {
     position: fixed;
@@ -24,7 +26,6 @@ h1 {
 .text {
     text-align: center;
     font-size: 60px;
-    font-family: Courier;
 }
 #pass {
     position: relative;
@@ -150,7 +151,6 @@ h1 {
 
 /*CSS for Country/Performance pages*/
 .desc {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     margin: 0;
     width: 100%;
@@ -165,11 +165,8 @@ h1 {
     bottom: -5em;
 }
 .countryHeader {
-    font-family: Gothic;
-    background-color: white;
-    margin-top: 15px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid grey;
+    background: transparent;
+    color: #fff;
 }
 .lilnasx { /*aka country wrapper*/
     overflow-y: scroll;
@@ -177,8 +174,12 @@ h1 {
     grid-template-rows: repeat(2, 1fr  );
     gap: 0px;
     height: 120%;
-    background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background: transparent;
+}
+.country {
+    background-color: #839169;
+    background-image: url("images/cuibg.png");
+    background-size: cover;
 }
 .countryPer {
     position: relative;
@@ -189,6 +190,7 @@ h1 {
     background-color: rgba(255,255,255, 0);
 }
 .perdesc {
+    color: #fff;
     background-color: rgba(255,255,255, 0);
 }
 .mapbox {
@@ -197,6 +199,7 @@ h1 {
 }
 .mapdesc {
     bottom: -4em;
+    color: #fff;
     background-color: rgba(255,255,255, 0);
 }
 .composer {
@@ -214,6 +217,8 @@ h1 {
 }
 .linedesc {
     bottom: -3em;
+    left: 0;
+    color: #fff;
     background-color: rgba(255,255,255, 0);
 }
 .trivia {
@@ -228,8 +233,10 @@ h1 {
     text-align: center;
     vertical-align: middle;
     line-height: 2em;
-    border: 3px solid slategrey;
-    color: black;
+    border: 3px solid #C6B070;
+    color: #fff;
+    font-weight: 700;
+    background-image: linear-gradient(to top left,#C6B070,#839169,#839169);
     transition: background-color .3s;
     transition: border .2s;
     position: absolute;
@@ -239,7 +246,6 @@ h1 {
     right: 1em;
 }
 .nextButton:hover {
-    background-color: gainsboro;
     border: 0;
 }
 .backButton {
