@@ -6,6 +6,9 @@ document.getElementById("amap").addEventListener("click", function() {
     else
     window.open("https://www.google.com/maps/place/Austria");
 });
-document.getElementById("abutton").addEventListener("click", function() {
+document.getElementById("anext").addEventListener("click", function() {
     window.location = "Italy.html";
+})
+document.getElementById("aback").addEventListener("click", function() {
+    window.location = "Germany.html";
 })
