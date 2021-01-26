@@ -6,3 +6,6 @@ document.getElementById("pmap").addEventListener("click", function() {
     else
     window.open("https://www.google.com/maps/place/Poland");
 });
+document.getElementById("pback").addEventListener("click", function() {
+    window.location = "Italy.html";
+})
