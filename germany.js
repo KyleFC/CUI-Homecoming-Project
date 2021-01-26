@@ -6,6 +6,6 @@ document.getElementById("gmap").addEventListener("click", function() {
     else
     window.open("https://www.google.com/maps/place/Germany");
 });
-document.getElementById("gbutton").addEventListener("click", function() {
+document.getElementById("gnext").addEventListener("click", function() {
     window.location = "Austria.html";
 })
