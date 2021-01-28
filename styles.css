@@ -145,8 +145,8 @@ h1 {
       position: absolute;
       bottom: 0;
       text-align: center;
-      width: 100%;
       height: 100%;
+      width: 100%;
 }
 
 /*CSS for Country/Performance pages*/
@@ -207,7 +207,7 @@ h1 {
     grid-row: 2;
     margin-bottom: 70px;
 }
-.mapbox, .composer {
+.mapbox, .composer , .trivia{
     position: relative;
     padding: 0;
     min-width: 450px;
@@ -226,7 +226,13 @@ h1 {
     grid-column: 2;
     grid-row: 2;
     margin-bottom: 70px;
-    min-width: 450px;
+    background-size: contain;
+}
+.triviadesc {
+    bottom: -4em;
+    left: 0;
+    color: #fff;
+    background-color: rgba(255,255,255, 0);
 }
 .nextButton {
     cursor: pointer;
@@ -243,13 +249,13 @@ h1 {
     width: 3em;
     height: 2em;
     bottom: -2.5em;
-    right: 1em;
+    right: 0;
 }
 .nextButton:hover {
     border: 0;
 }
 .backButton {
-    right: 5em;
+    right: 4em;
 }
 #gmap {
     background-image: url("images/Germany.jpg");
@@ -262,6 +268,18 @@ h1 {
 }
 #pmap {
     background-image: url("images/Poland.jpg");
+}
+#gtrivia {
+    background-image: url("images/germanycolor.png");
+}
+#atrivia {
+    background-image: url("images/austriacolor.png");
+}
+#itrivia {
+    background-image: url("images/italycolor.jpg");
+}
+#ptrivia {
+    background-image: url("images/polandcolor.jpg");
 }
 @media screen and (max-width: 800px)
 {
