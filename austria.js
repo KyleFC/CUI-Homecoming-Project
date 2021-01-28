@@ -12,3 +12,6 @@ document.getElementById("anext").addEventListener("click", function() {
 document.getElementById("aback").addEventListener("click", function() {
     window.location = "Germany.html";
 })
+document.getElementById("atrivia").addEventListener("click", function() {
+    window.open("https://kylefc.github.io/images/austriacolor.png");
+})
