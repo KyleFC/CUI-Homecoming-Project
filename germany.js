@@ -9,3 +9,6 @@ document.getElementById("gmap").addEventListener("click", function() {
 document.getElementById("gnext").addEventListener("click", function() {
     window.location = "Austria.html";
 })
+document.getElementById("gtrivia").addEventListener("click", function() {
+    window.open("https://kylefc.github.io/images/germanycolor.png");
+})
