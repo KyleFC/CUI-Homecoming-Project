@@ -9,3 +9,6 @@ document.getElementById("pmap").addEventListener("click", function() {
 document.getElementById("pback").addEventListener("click", function() {
     window.location = "Italy.html";
 })
+document.getElementById("ptrivia").addEventListener("click", function() {
+    window.open("https://kylefc.github.io/images/polandcolor.jpg");
+})
