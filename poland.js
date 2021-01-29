@@ -14,8 +14,4 @@ document.getElementById("pnext").addEventListener("click", function() {
 })
 document.getElementById("ptrivia").addEventListener("click", function() {
     window.open("https://kylefc.github.io/images/polandcolor.jpg");
-<<<<<<< HEAD
 })
-=======
-})
->>>>>>> branch
