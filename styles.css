@@ -145,8 +145,10 @@ h1 {
       position: absolute;
       bottom: 0;
       text-align: center;
-      width: 100%;
       height: 100%;
+      width: 100%;
+      border: none;
+      border-radius: 2px;
 }
 
 /*CSS for Country/Performance pages*/
@@ -158,8 +160,6 @@ h1 {
     padding-right: 0;
     padding-top: 6px;
     padding-bottom: 6px;
-    color: black;
-    background-color: white;
     border-radius: 10px;
     position: absolute;
     bottom: -5em;
@@ -169,7 +169,6 @@ h1 {
     color: #fff;
 }
 .lilnasx { /*aka country wrapper*/
-    overflow-y: scroll;
     grid-template-columns: repeat(2, 1fr) ;
     grid-template-rows: repeat(2, 1fr  );
     gap: 0px;
@@ -188,6 +187,7 @@ h1 {
     grid-row: 1;
     min-width: 450px;
     background-color: rgba(255,255,255, 0);
+    border: 3px solid #C6B070;
 }
 .perdesc {
     color: #fff;
@@ -207,13 +207,14 @@ h1 {
     grid-row: 2;
     margin-bottom: 70px;
 }
-.mapbox, .composer {
+.mapbox, .composer , .trivia{
     position: relative;
     padding: 0;
     min-width: 450px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border: 3px solid #C6B070;
 }
 .linedesc {
     bottom: -3em;
@@ -226,7 +227,13 @@ h1 {
     grid-column: 2;
     grid-row: 2;
     margin-bottom: 70px;
-    min-width: 450px;
+    background-size: contain;
+}
+.triviadesc {
+    bottom: -4em;
+    left: 0;
+    color: #fff;
+    background-color: rgba(255,255,255, 0);
 }
 .nextButton {
     cursor: pointer;
@@ -243,13 +250,14 @@ h1 {
     width: 3em;
     height: 2em;
     bottom: -2.5em;
-    right: 1em;
+    right: 0;
 }
+
 .nextButton:hover {
     border: 0;
 }
 .backButton {
-    right: 5em;
+    right: 4em;
 }
 #gmap {
     background-image: url("images/Germany.jpg");
@@ -262,6 +270,65 @@ h1 {
 }
 #pmap {
     background-image: url("images/Poland.jpg");
+}
+#gtrivia {
+    background-image: url("images/germanycolor.png");
+}
+#atrivia {
+    background-image: url("images/austriacolor.png");
+}
+#itrivia {
+    background-image: url("images/italycolor.jpg");
+}
+#ptrivia {
+    background-image: url("images/polandcolor.jpg");
+}
+#bonuscontianer {
+    position: relative;
+    width: 100%;
+}
+#bPerformance {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 60%;
+    margin: 50px 60px 50px 60px;
+    min-width: 730px;
+}
+#bper {
+    border-radius: 20px;
+    width: 60%;
+    left: 0;
+    right: 0;
+    border: 3px solid #C6B070;
+    min-width: 400px;
+    display: inline-block;
+}
+#bcredits {
+    width: 35%;
+    font-size: 24px;
+    position: absolute;
+    right: -40px;
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(255,255,255, 0);
+    min-width: 233px;
+}
+#bdesc {
+    font-size: 24px;
+    bottom: -4em;
+}
+#bback {
+    font-size: 24px;
+    bottom: -8em;
+    width: 5em;
+    height: 3em;
+    right: 1em;
+    line-height: 3em;
+}
+#cheat {
+    min-width: 750px;
+    overflow-x: scroll;
 }
 @media screen and (max-width: 800px)
 {
@@ -309,6 +376,14 @@ h1 {
         margin-right: 20px;
         grid-column: col 2;
         grid-row: row 3;
+    }
+    #bdesc {
+        bottom: -7em;
+        font-size: 14px;
+    }
+    #bback {
+        right: 0;
+        left: 0;
     }
 }
 @media screen and (max-width: 500px)

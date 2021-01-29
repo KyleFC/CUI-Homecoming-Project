@@ -12,3 +12,6 @@ document.getElementById("inext").addEventListener("click", function() {
 document.getElementById("iback").addEventListener("click", function() {
     window.location = "Austria.html";
 })
+document.getElementById("itrivia").addEventListener("click", function() {
+    window.open("https://kylefc.github.io/images/italycolor.jpg");
+})
