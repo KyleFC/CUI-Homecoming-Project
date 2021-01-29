@@ -346,7 +346,11 @@ nav {
     background: transparent;
     z-index: 100000;
 }
-.navbar, a:link, a:visited {
+a:link {
+    text-decoration: none;
+    color: white;
+}
+.navbar, a:visited {
 
     height: 100%;
     text-align: center;
